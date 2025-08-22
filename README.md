@@ -80,17 +80,6 @@ python main.py --scan
 python main.py --checkcalc
 ```
 
-## 📚 **Documentation**
-
-### 🎯 **Feature Activation Guides**
-- **[Opel Corsa F Activation Guide](CORSA_F_PYPSA_DROPDOWN_ANLEITUNG.md)**: Complete feature activation with real zone data
-- **[Multi-ECU Features](ANKE_AKTIVIERBARE_FEATURES_LISTE.md)**: Comprehensive feature list for your vehicle
-
-### 🔧 **Technical Documentation**
-- **[CLAUDE.md](CLAUDE.md)**: Complete project overview and architecture
-- **[Hardware Integration](HARDWARE_CHECK_LISTE.md)**: Hardware compatibility checker
-- **[VCI Integration](PSA_RE_Integration_README.md)**: VCI bridge system documentation
-
 ## 🏗️ **Project Structure**
 
 ### **Core Components**
