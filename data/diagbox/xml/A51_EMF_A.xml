@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TPM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TPM.xsd">
+  <ScreenList>
+    <Screen Name="TELECODAGE1" TitleRead="@P15708-POLUXDATA@T : @P2983-POLUXDATA" TitleWrite="@F12087-POLUXDATA@\*@F2983-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_CMB_MTUNITVOLUME_temp"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B1"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B1"/>
+          <!-- déclaration du service et sous service de lecture -->
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_222_FORMAT_DATE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_222_UNITE_TEMPERATURE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTAFFPOSNEG_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB1_3"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B5"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B5"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CFG_222_SEU_VER_IHM_EMF_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE11" TitleRead="@P15708-POLUXDATA@T : @P2983-POLUXDATA" TitleWrite="@F12087-POLUXDATA@\*@F2983-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_1"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_LANGCLI"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B1"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B1"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_222_FORMAT_DATE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_222_UNITE_TEMPERATURE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTAFFPOSNEG_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB1_3"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B5"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B5"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CFG_222_SEU_VER_IHM_EMF_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Ecran avec LID_B3 = 5 OCTET et Ind >=02(B) -->
+    <Screen Name="TELECODAGE2" TitleRead="@P15708-POLUXDATA@T : @P11025-POLUXDATA" TitleWrite="@F12087-POLUXDATA@\*@P32412-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B3"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B3"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="false" Mode="None" Name="MP_CCD"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTTEXT_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTRADIO_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTODB_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTDSGINDIRECTE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TYPE_COMBINE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="BOIT_TELEMATIQUE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_AFFICHAGE_EN_PERMANENCE_SILHOUETTE_VEHICULE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="INFO_FONCTION_STT_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB3_3"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CFG_ALU_EMF_CLIM_000"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB3_4"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBRE5_5"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B2"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B2"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AYF_EMF_FONCTION_CSV_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTTECHNOCDT_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB2_3"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B5"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B5"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CFG_222_SEU_VER_IHM_EMF_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Ecran avec LID_B3 = 4 OCTET-->
+    <Screen Name="TELECODAGE21" TitleRead="@P15708-POLUXDATA@T : @P11025-POLUXDATA" TitleWrite="@F12087-POLUXDATA@\*@P32412-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B3"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B3"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="false" Mode="None" Name="MP_CCD"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTTEXT_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTRADIO_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTODB_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTDSGINDIRECTE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TYPE_COMBINE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB3_3"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CFG_ALU_EMF_CLIM_000"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB3_4"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B2"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B2"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AYF_EMF_FONCTION_CSV_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTTECHNOCDT_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB2_3"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B5"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B5"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CFG_222_SEU_VER_IHM_EMF_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE3" TitleRead="@P15708-POLUXDATA@T : @P4663-POLUXDATA" TitleWrite="@F12087-POLUXDATA@\*@P4663-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B4"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B4"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTFILTRAGEOPTIONS_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTDOPTOTAL_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_ESSUYARENMAR_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ASP_EMF_MP_EEX_AUT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ASQ_EMF_MP_EEX_FMH_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ASR_EMF_MP_EEX_ADAPT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AST_EMF_MP_GAV_COFFRE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ASU_EMF_MP_GAV_PORTE_COND_000"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CFG_ASL_EMF_MP_SECUROSCOPE_000"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB4_3"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB4_4"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MTFSE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ASX_EMF_MP_SIGN_DIURNES_000"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBREB4_5"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B5"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B5"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de la trame d'ecriture -->
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CFG_222_SEU_VER_IHM_EMF_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELE_INSTALLATION" TitleRead="@P15708-POLUXDATA@T : @P5745-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P5745-POLUXDATA" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_B3"/>
+          <Write Service="WDBLID" SubService="WDBLID_LID_B3_2"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="20" Mode="None" Name="MP_OPTION_CHANGEUR_CD"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors/>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELE_DESINSTALLATION" TitleRead="@P15708-POLUXDATA@T : @P5745-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P5745-POLUXDATA" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_B3"/>
+          <Write Service="WDBLID" SubService="WDBLID_LID_B3_2"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="MP_OPTION_CHANGEUR_CD"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors/>
+      </Telecoding>
+    </Screen>
+    <Screen Name="DESINSTALLATION1RD4" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_B3"/>
+          <Write Service="WDBLID" SubService="WDBLID_SUREQ_LID_B3"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_AUTORADIO"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBRE_3"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBRE_4"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="DESINSTALLATION2RD4" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_B3"/>
+          <Write Service="WDBLID" SubService="WDBLID_SUREQ_LID_B3"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_AUTORADIO"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBRE_3"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBRE_4"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="INSTALLATION1RD4" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_B3"/>
+          <Write Service="WDBLID" SubService="WDBLID_SUREQ_LID_B3"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="04" Mode="None" Name="CONFIG_AUTORADIO"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBRE_3"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBRE_4"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="INSTALLATION2RD4" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_B3"/>
+          <Write Service="WDBLID" SubService="WDBLID_SUREQ_LID_B3"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="04" Mode="None" Name="CONFIG_AUTORADIO"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBRE_3"/>
+            <TlcdParameter Impose="false" Mode="None" Name="LIBRE_4"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+  </ScreenList>
+  <TlcdParameters>
+    <!-- Declaration des parametres pour le lien entre trame de lecture et d'ecriture -->
+    <TlcdParameterDef Name="CFG_TMP_CMB_MTUNITVOLUME_temp" ReadParamName="MP_LANGUE_DU_CLIENT" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P8286-POLUXDATA" HelpMode="OnScreen" Label="@P6224-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P6901-POLUXDATA" Name="MTLANGCLI_FRA"/>
+          <DiscretValue Label="@P7334-POLUXDATA" Name="MTLANGCLI_ANG"/>
+          <DiscretValue Label="@P10893-POLUXDATA" Name="MTLANGCLI_ALL"/>
+          <DiscretValue Label="@P23167-POLUXDATA" Name="MTLANGCLI_ESP"/>
+          <DiscretValue Label="@P3919-POLUXDATA" Name="MTLANGCLI_ITA"/>
+          <DiscretValue Label="@P11293-POLUXDATA" Name="MTLANGCLI_POR"/>
+          <DiscretValue Label="@P3050-POLUXDATA" Name="MTLANGCLI_NEER"/>
+          <DiscretValue Label="@P5872-POLUXDATA" Name="MTLANGCLI_BRES"/>
+          <DiscretValue Label="@P16150-POLUXDATA" Name="MTLANGCLI_CHIN_TRAD"/>
+          <DiscretValue Label="@P15105-POLUXDATA" Name="MTLANGCLI_CHIN_SIMP"/>
+          <DiscretValue Label="@P3992-POLUXDATA" Name="MTLANGCLI_TURC"/>
+          <DiscretValue Label="@F20053-POLUXDATA" Name="MTLANGCLI_RUSSE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="MP_LANGCLI" ReadParamName="MP_LANGUE_DU_CLIENT" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P8286-POLUXDATA" HelpMode="OnScreen" Label="@P6224-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P6901-POLUXDATA" Name="BIS_MTLANGCLI_FRANCAIS"/>
+          <DiscretValue Label="@P7334-POLUXDATA" Name="BIS_MTLANGCLI_ANGLAIS"/>
+          <DiscretValue Label="@P10893-POLUXDATA" Name="BIS_MTLANGCLI_ALLEMAND"/>
+          <DiscretValue Label="@P23167-POLUXDATA" Name="BIS_MTLANGCLI_ESPAGNOL"/>
+          <DiscretValue Label="@P3919-POLUXDATA" Name="BIS_MTLANGCLI_ITALIEN"/>
+          <DiscretValue Label="@P11293-POLUXDATA" Name="BIS_MTLANGCLI_PORTUGAIS"/>
+          <DiscretValue Label="@P3050-POLUXDATA" Name="BIS_MTLANGCLI_NEERLANDAIS"/>
+          <DiscretValue Label="@P5872-POLUXDATA" Name="BIS_MTLANGCLI_BRESILIEN"/>
+          <DiscretValue Label="@P16150-POLUXDATA" Name="BIS_MTLANGCLI_CHIN_TRAD"/>
+          <DiscretValue Label="@P15105-POLUXDATA" Name="BIS_MTLANGCLI_CHIN_SIM"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_222_FORMAT_DATE_000" ReadParamName="MP_FORMAT_DATE" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P31911-POLUXDATA@T - @P31910-POLUXDATA" HelpMode="OnScreen" Label="@P27562-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P61-POLUXDATA" Name="MTNOTDATE_FRANCE"/>
+          <DiscretValue Label="@P62-POLUXDATA" Name="MTNOTDATE_ANGLO"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_222_UNITE_TEMPERATURE_000" ReadParamName="CFG_222_UNITE_TEMPERATURE_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P4706-POLUXDATA" HelpMode="OnScreen" Label="@P10071-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P15595-POLUXDATA@\*" Name="MPUNTEMP_C"/>
+          <DiscretValue Label="@P7921-POLUXDATA@\*" Name="MPUNTEMP_F"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MTAFFPOSNEG_temp" ReadParamName="MPAFFPOSNEG" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P42890-POLUXDATA@\n@\+@P42891-POLUXDATA" HelpMode="OnScreen" Label="@P3488-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P22853-POLUXDATA" Name="MTAFFPOSNE_POSITIF"/>
+          <DiscretValue Label="@P16746-POLUXDATA" Name="MTAFFPOSNE_NEGATIF"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="MP_CCD" ReadParamName="MP_OPTION_CHANGEUR_CD" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P37241-POLUXDATA@T.@\n@F28866-POLUXDATA@T." HelpMode="OnScreen" Label="@P4986-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="MTCCD_0"/>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="MTCCD_1"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TYPE_COMBINE" ReadParamName="MP_TYPE_CMB" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P42029-POLUXDATA@\*5@\*4@T." HelpMode="OnScreen" Label="@P10176-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P5263-POLUXDATA" Name="COMBINE_SANS_BORD"/>
+          <DiscretValue Label="@P11663-POLUXDATA" Name="COMBINE_AVEC_BORD"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="INFO_FONCTION_STT_temp" ReadParamName="INFO_FONCTION_STT" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P24032-POLUXDATA" HelpMode="OnScreen" Label="@P22175-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="INFO_PRESENT"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="INFO_ABSENT"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="BOIT_TELEMATIQUE_temp" ReadParamName="BOIT_TELEMATIQUE" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P24039-POLUXDATA" HelpMode="OnScreen" Label="@P440-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="BOIT_PRESENT"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="BOIT_ABSENT"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MTTEXT_temp" ReadParamName="AFFICHAGE_TEMPERATURE_EXTERIEURE" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P28834-POLUXDATA@T.@\n@P28855-POLUXDATA@T." HelpMode="OnScreen" Label="@P7900-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="MTTEXT_NDMD"/>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="MTTEXT_DMD"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MTRADIO_temp" ReadParamName="MP_OPTION_AUTORADIO" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P37240-POLUXDATA@T.@\n@F28929-POLUXDATA@T." HelpMode="OnScreen" Label="@P3257-POLUXDATA@\*">
+        <DiscretValues>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="MTRADIO_A"/>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="MTRADIO_P"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MTODB_temp" ReadParamName="CFG_TMP_MTODB_temp" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P33386-POLUXDATA@\+@T.@\n@P28936-POLUXDATA" HelpMode="OnScreen" Label="@P10184-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="MTODB_INACT"/>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="MTODB_ACT"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MTDSGINDIRECTE_temp" ReadParamName="CFG_A6N_BSI_DSG_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@F8680-POLUXDATA@T." HelpMode="OnScreen" Label="@P5890-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P3950-POLUXDATA" Name="MTDSGINDIRECTE_ABSENTE"/>
+          <DiscretValue Label="@P15095-POLUXDATA" Name="MTDSGINDIRECTE_PRESENTE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AYF_EMF_FONCTION_CSV_000" ReadParamName="MP_COMMANDE_EMF_PAR_COMMANDE_RADIO_SOUS_VOLANT" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P42481-POLUXDATA" HelpMode="OnScreen" Label="@P8070-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P16961-POLUXDATA" Name="MTFONCTIONCSV_0"/>
+          <DiscretValue Label="@P701-POLUXDATA" Name="MTFONCTIONCSV_1"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="LIBREB2_3" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBREB3_3" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBREB3_3" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CFG_ALU_EMF_CLIM_000" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBRE_B3_5" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBREB4_3" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBREB4_4" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBREB4_5" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CONFIG_AUTORADIO" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBRE_3" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBRE_4" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CFG_222_SEU_VER_IHM_EMF_000" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBRE5_5" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBREB3_5_654320" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CFG_TMP_MTTECHNOCDT_temp" ReadParamName="MP_TECHNOCDT" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P9936-POLUXDATA" HelpMode="OnScreen" Label="@P9655-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9854-POLUXDATA" Name="MTTECHNOCDT_00"/>
+          <DiscretValue Label="@P14334-POLUXDATA" Name="MTTECHNOCDT_10"/>
+          <DiscretValue Label="@P10480-POLUXDATA" Name="MTTECHNOCDT_11"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MTFILTRAGEOPTIONS_temp" ReadParamName="MP_PERSONNALISATION" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41069-POLUXDATA@\+@T." HelpMode="OnScreen" Label="@P7070-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTFILTRAGEOPTIONS_DESACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTFILTRAGEOPTIONS_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MTDOPTOTAL_temp" ReadParamName="MP_DOPTOTAL" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41175-POLUXDATA@\+@T.@\n@P44590-POLUXDATA" HelpMode="OnScreen" Label="@P9445-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTDOPTOTAL_DESACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTDOPTOTAL_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_ESSUYARENMAR_temp" ReadParamName="MP_ELAVESAR" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41175-POLUXDATA@\+@T." HelpMode="OnScreen" Label="@P2353-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTELAVESAR_DESACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTELAVESAR_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_ASP_EMF_MP_EEX_AUT_000" ReadParamName="MP_OPTION_AUTO" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41175-POLUXDATA@\+@T.@\n@P42982-POLUXDATA" HelpMode="OnScreen" Label="@P11702-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTEEXAUTO_DESACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTEEXAUTO_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_ASQ_EMF_MP_EEX_FMH_000" ReadParamName="MP_EEXFMH" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41175-POLUXDATA@\+@T.@\n@P42983-POLUXDATA" HelpMode="OnScreen" Label="@P13803-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTEEXFMH_DESACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTEEXFMH_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_ASR_EMF_MP_EEX_ADAPT_000" ReadParamName="MP_EEXADAPT" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41175-POLUXDATA@\+@T." HelpMode="OnScreen" Label="@P11599-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTEEXADAPT_DESACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTEEXADAPT_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AST_EMF_MP_GAV_COFFRE_000" ReadParamName="MP_COND_COFFRE" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41175-POLUXDATA@\+@T." HelpMode="OnScreen" Label="@P8304-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTGAVCOFFRE_DESACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTGAVCOFFRE_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_ASU_EMF_MP_GAV_PORTE_COND_000" ReadParamName="MP_GAV_PORTE_COND" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41175-POLUXDATA@\+@T." HelpMode="OnScreen" Label="@P13879-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTGAVPORTECOND_DESACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTGAVPORTECOND_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MTFSE_temp" ReadParamName="MP_FSE" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41175-POLUXDATA@\+@T." HelpMode="OnScreen" Label="@P5305-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTFSE_NON_ACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTFSE_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_ASX_EMF_MP_SIGN_DIURNES_000" ReadParamName="MP_FEUX_DIURNES" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41175-POLUXDATA@\+@T." HelpMode="OnScreen" Label="@P7069-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MTDIURNES_NON_ACTIVE"/>
+          <DiscretValue Label="@P7737-POLUXDATA" Name="MTDIURNES_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="MP_AFFICHAGE_EN_PERMANENCE_SILHOUETTE_VEHICULE" ReadParamName="MP_AFFICHAGE_EN_PERMANENCE_SILHOUETTE_VEHICULE" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P10362-POLUXDATA" HelpMode="OnScreen" Label="@P16593-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="MTSILHVEH_A"/>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="MTSILHVEH_P"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="LIBREB1_3" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CFG_ASL_EMF_MP_SECUROSCOPE_000" Type="GeneralParam"/>
+    <TlcdParameterDef Name="LIBRE5_6" Type="GeneralParam"/>
+  </TlcdParameters>
+</TPM>

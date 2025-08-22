@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TPM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TPM.xsd">
+  <ScreenList>
+    <Screen Name="TELECODAGE1" TitleRead="@P15708-POLUXDATA@T : @P16222-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P16222-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <!-- Code VIN	 -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_CC"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_CC"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+						<!-- <TlcdParameter Name="CONFIG_NUM_SERIE_VEHICULE_CODE_VIN" Mode="ReadWrite" Impose="false"/> -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_VIN"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGES_6OCT" TitleRead="@P15708-POLUXDATA@T : @P16222-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P16222-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <!-- Code VIN	 -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_CC"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_CC"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+						<!-- <TlcdParameter Name="CONFIG_NUM_SERIE_VEHICULE_CODE_VIN" Mode="ReadWrite" Impose="false"/> -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_VIN"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_BBW_RADIO_VCCF_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_D"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_D79_RADIO_EMF_TYP_CARCT_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALA_RADIO_PANNE_ANTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AH2_RADIO_NB_ANTENNE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIQ_RADIO_TYPE_ANTENNE_1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIR_RADIO_TYPE_ANTENNE_2_000"/>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHU_RADIO_TAB_ECL01_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHW_RADIO_TAB_ECL02_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHY_RADIO_TAB_ECL03_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI0_RADIO_TAB_ECL04_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI2_RADIO_TAB_ECL05_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI4_RADIO_TAB_ECL06_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI6_RADIO_TAB_ECL07_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI8_RADIO_TAB_ECL08_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIA_RADIO_TAB_ECL09_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIC_RADIO_TAB_ECL10_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIE_RADIO_TAB_ECL11_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIG_RADIO_TAB_ECL12_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AII_RADIO_TAB_ECL13_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIK_RADIO_TAB_ECL14_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIM_RADIO_TAB_ECL15_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIO_RADIO_TAB_ECL16_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MPECLAIRNIV17"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MPECLAIRNIV18"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+		</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGES_7OCT" TitleRead="@P15708-POLUXDATA@T : @P16222-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P16222-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <!-- Code VIN	 -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_CC"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_CC"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+						<!-- <TlcdParameter Name="CONFIG_NUM_SERIE_VEHICULE_CODE_VIN" Mode="ReadWrite" Impose="false"/> -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_VIN"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_BBW_RADIO_VCCF_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_D"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_D79_RADIO_EMF_TYP_CARCT_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Z_RADIO_VOLUME_AAS_AV_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Y_RADIO_VOLUME_AAS_AR_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALA_RADIO_PANNE_ANTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AH2_RADIO_NB_ANTENNE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIQ_RADIO_TYPE_ANTENNE_1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIR_RADIO_TYPE_ANTENNE_2_000"/>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHU_RADIO_TAB_ECL01_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHW_RADIO_TAB_ECL02_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHY_RADIO_TAB_ECL03_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI0_RADIO_TAB_ECL04_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI2_RADIO_TAB_ECL05_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI4_RADIO_TAB_ECL06_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI6_RADIO_TAB_ECL07_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI8_RADIO_TAB_ECL08_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIA_RADIO_TAB_ECL09_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIC_RADIO_TAB_ECL10_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIE_RADIO_TAB_ECL11_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIG_RADIO_TAB_ECL12_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AII_RADIO_TAB_ECL13_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIK_RADIO_TAB_ECL14_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIM_RADIO_TAB_ECL15_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIO_RADIO_TAB_ECL16_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MPECLAIRNIV17"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MPECLAIRNIV18"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+		</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE7OCT" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic B -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_BBW_RADIO_VCCF_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Z_RADIO_VOLUME_AAS_AV_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Y_RADIO_VOLUME_AAS_AR_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE7D" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio VARD D -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_D"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Z_RADIO_VOLUME_AAS_AV_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Y_RADIO_VOLUME_AAS_AR_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE7CF" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic B C -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_BC"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_BBW_RADIO_VCCF_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Z_RADIO_VOLUME_AAS_AV_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Y_RADIO_VOLUME_AAS_AR_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE7B" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic B C -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_B"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_CONFIG_C0_62"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Z_RADIO_VOLUME_AAS_AV_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Y_RADIO_VOLUME_AAS_AR_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE7E" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic E -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_D"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_D79_RADIO_EMF_TYP_CARCT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Z_RADIO_VOLUME_AAS_AV_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Y_RADIO_VOLUME_AAS_AR_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEA" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic A -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_A"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE6D" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio VARD D -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_D"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE6CF" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic B C -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_BC"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_BBW_RADIO_VCCF_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE6B" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic B C -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_B"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_CONFIG_C0_62"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE6E" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic E -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_D"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_D79_RADIO_EMF_TYP_CARCT_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE_2A" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_1"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="true" ImposedValue="01" Mode="ReadWrite" Name="CFG_TMP_MPASSERVISSONORE_temp"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE_2B" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C01"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="true" ImposedValue="01" Mode="ReadWrite" Name="CFG_TMP_MPASSERVISSONORE_temp"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE2C" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic C, et mode dégradé -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <!-- <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_BBW_RADIO_VCCF_000"/> --> <!-- non appplicable pour C -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Z_RADIO_VOLUME_AAS_AV_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Y_RADIO_VOLUME_AAS_AR_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE_2C" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C01"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="true" ImposedValue="01" Mode="ReadWrite" Name="CFG_TMP_MPASSERVISSONORE_temp"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE2D" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="STANDARD_GUI">
+      <!--Configuration Autoradio Applic D-->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGH_RADIO_COUNTRY_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGI_RADIO_DESACTIVATION_AM_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGV_RADIO_HI_FI_001"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MPTABLEVOLUME_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AGZ_RADIO_LOI_LODX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALC_RADIO_RADIO_TEXT_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKZ_RADIO_CD_TEXTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHQ_RADIO_PARK_AID_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKX_RADIO_AUX1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AKY_RADIO_AUX2_000"/>
+            <!--<TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_BBW_RADIO_VCCF_000"/> -->  <!-- non appplicable pour D -->
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CFG_D76_RADIO_EMF_TYP_CARCT_000"/>
+            <!-- télécodé en masqué pr variante D -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Z_RADIO_VOLUME_AAS_AV_000"/>
+            <!-- appplicable pour D suite au SUIVI SUIVI_CDC_DIAG-COM-08-014 Ind H (Autoradio CAN)_V1 -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B4Y_RADIO_VOLUME_AAS_AR_000"/>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           <!-- appplicable pour D suite au SUIVI SUIVI_CDC_DIAG-COM-08-014 Ind H (Autoradio CAN)_V1 -->
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE3D" TitleRead="@P15708-POLUXDATA@T : @P7723-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P7723-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <!-- CONFIGURATION ANTENNE VARIANTE D-->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALA_RADIO_PANNE_ANTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AH2_RADIO_NB_ANTENNE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIQ_RADIO_TYPE_ANTENNE_1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIR_RADIO_TYPE_ANTENNE_2_000"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CFG_D76_RADIO_EMF_TYP_CARCT_000"/>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           <!-- télécodé en masqué pr variante D -->
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE3" TitleRead="@P15708-POLUXDATA@T : @P7723-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P7723-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <!-- CONFIGURATION ANTENNE VARIANTE AUTRE QUE D-->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_ALA_RADIO_PANNE_ANTE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AH2_RADIO_NB_ANTENNE_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIQ_RADIO_TYPE_ANTENNE_1_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIR_RADIO_TYPE_ANTENNE_2_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="CONFIGDIFFERENTE" TitleRead="@P15708-POLUXDATA@T : @P11053-POLUXDATA@\*16" TitleWrite="@F12087-POLUXDATA@T : @P11053-POLUXDATA@\*16" TypeOfGUI="STANDARD_GUI">
+      <!--  Configuration différente pour les 16 niveaux -->
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B0"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B0"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHU_RADIO_TAB_ECL01_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHW_RADIO_TAB_ECL02_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AHY_RADIO_TAB_ECL03_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI0_RADIO_TAB_ECL04_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI2_RADIO_TAB_ECL05_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI4_RADIO_TAB_ECL06_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI6_RADIO_TAB_ECL07_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AI8_RADIO_TAB_ECL08_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIA_RADIO_TAB_ECL09_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIC_RADIO_TAB_ECL10_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIE_RADIO_TAB_ECL11_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIG_RADIO_TAB_ECL12_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AII_RADIO_TAB_ECL13_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIK_RADIO_TAB_ECL14_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIM_RADIO_TAB_ECL15_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_AIO_RADIO_TAB_ECL16_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MPECLAIRNIV17"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="MPECLAIRNIV18"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELE_INSTALLATION" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_1"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="08" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000_NEW"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELE_DESINSTALLATION" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0_1"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="ReadWrite" Name="CFG_AL0_RADIO_CDC_000_NEW"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELE_INSTALLATION_KML" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="C0" Mode="None" Name="CFG_AKX_RADIO_AUX1_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELE_DESINSTALLATION_KML" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CFG_AKX_RADIO_AUX1_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELE_DESINSTALLATION_KML" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_KML"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELE_INSTALLATION_CCD" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="08" Mode="None" Name="CFG_AL0_RADIO_CDC_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELE_DESINSTALLATION_CCD" TitleRead="@P15708-POLUXDATA@T : @P1442-POLUXDATA" TitleWrite="@F12087-POLUXDATA@T : @P1699-POLUXDATA@\*" TypeOfGUI="WITHOUT_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_C0"/>
+          <Write Service="WDBLID" SubService="WDBLID_LID_C0"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CFG_AL0_RADIO_CDC_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+  </ScreenList>
+  <TlcdParameters>
+    <!-- Declaration des parametres pour le lien entre trame de lecture et d'ecriture
+    <TlcdParameterDef Name="MP_CCD" ReadParamName="CONFIG_CCD" Type="ListChoiceParam">
+      <ConfigurationValue Label="@P33513-POLUXDATA" Help="@P2284-POLUXDATA" HelpMode="OnScreen">
+        <DiscretValues>
+          <DiscretValue Name="CONFIG_CCD_ABSENT" Label="@P26678-POLUXDATA"/>
+          <DiscretValue Name="CONFIG_CCD_PRESENT" Label="@P596-POLUXDATA"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>  -->
+    <TlcdParameterDef Name="CFG_AL0_RADIO_CDC_000_NEW" ReadParamName="CFG_AL0_RADIO_CDC_000_NEW" Type="GeneralParam">
+      <ConfigurationValue Help="@P30078-POLUXDATA" HelpMode="OnScreen" Label="@P33513-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="MP_VIN" ReadParamName="MP_VIN" Type="GeneralParam">
+      <ConfigurationValue Help="@P31772-POLUXDATA" HelpMode="OnScreen" Label="@P3241-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AGH_RADIO_COUNTRY_000" ReadParamName="CFG_AGH_RADIO_COUNTRY_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P24002-POLUXDATA@T :@\n@T-@P30500-POLUXDATA@T...@\n@T-@P6010-POLUXDATA@\n@T-@P16021-POLUXDATA@T : @P1959-POLUXDATA@T, @P23920-POLUXDATA@T, @P4716-POLUXDATA@T.@\n@T-@P29874-POLUXDATA@\n@T-@P11800-POLUXDATA@\n@T-@P15719-POLUXDATA@T : @P23985-POLUXDATA@\n@T-@P8133-POLUXDATA" HelpMode="OnScreen" Label="@P5381-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P2282-POLUXDATA" Name="MPZONEUTILISATION_EUROPEOUEST"/>
+          <DiscretValue Label="@P6010-POLUXDATA" Name="MPZONEUTILISATION_JAPON"/>
+          <DiscretValue Label="@P16021-POLUXDATA" Name="MPZONEUTILISATION_AMERIQUELATINE"/>
+          <DiscretValue Label="@P14827-POLUXDATA" Name="MPZONEUTILISATION_ASIE"/>
+          <DiscretValue Label="@P11800-POLUXDATA" Name="MPZONEUTILISATION_USA"/>
+          <DiscretValue Label="@P15719-POLUXDATA" Name="MPZONEUTILISATION_ARABIE"/>
+          <DiscretValue Label="@P8133-POLUXDATA" Name="MPZONEUTILISATION_CHINE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AL0_RADIO_CDC_000" ReadParamName="CFG_AL0_RADIO_CDC_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P30078-POLUXDATA" HelpMode="OnScreen" Label="@P33513-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@F6220-POLUXDATA@\*" Name="MPPRESENCECCD_ABSENT"/>
+          <DiscretValue Label="@P596-POLUXDATA" Name="MPPRESENCECCD_PRESENT"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AGJ_RADIO_DESACTIVATION_FADER_000" ReadParamName="CFG_AGJ_RADIO_DESACTIVATION_FADER_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29411-POLUXDATA@T :@\n@T- @P31759-POLUXDATA@\*4@\*2@\*2@\n@T-@P31269-POLUXDATA@\*2@\*2" HelpMode="OnScreen" Label="@P13957-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P8378-POLUXDATA" Name="MPETATFADER_DESACTIVE"/>
+          <DiscretValue Label="@P3564-POLUXDATA" Name="MPETATFADER_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AGI_RADIO_DESACTIVATION_AM_000" ReadParamName="CFG_AGI_RADIO_DESACTIVATION_AM_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P32345-POLUXDATA@\n@P1069-POLUXDATA@\n@\+@P31151-POLUXDATA" HelpMode="OnScreen" Label="@P13331-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P8378-POLUXDATA" Name="MPETATBANDEAM_DESACTIVE"/>
+          <DiscretValue Label="@P3564-POLUXDATA" Name="MPETATBANDEAM_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE" ReadParamName="MP_ASSERVISSEMENT_VOLUME_SONORE_VITESSE" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P15751-POLUXDATA" HelpMode="OnScreen" Label="@P12474-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P1037-POLUXDATA" Name="MPASSERVISSONORE_DESACTIVE_1"/>
+          <DiscretValue Label="@P780-POLUXDATA" Name="MPASSERVISSONORE_ACTIVE_1"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MPASSERVISSONORE_temp" ReadParamName="CFG_TMP_MPASSERVISSONORE_temp" Type="GeneralParam">
+      <ConfigurationValue Help="@P15751-POLUXDATA" HelpMode="OnScreen" Label="@P27300-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AGV_RADIO_HI_FI_000" ReadParamName="CFG_AGV_RADIO_HI_FI_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P10742-POLUXDATA" HelpMode="OnScreen" Label="@P10744-POLUXDATA@T(@F5198-POLUXDATA@T)">
+        <DiscretValues>
+          <DiscretValue Label="@P26678-POLUXDATA" Name="ABSENT0"/>
+          <DiscretValue Label="@P596-POLUXDATA" Name="PRESENT1"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AGV_RADIO_HI_FI_001" ReadParamName="CFG_AGV_RADIO_HI_FI_001" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P10742-POLUXDATA" HelpMode="OnScreen" Label="@P10744-POLUXDATA@T(@F15248-POLUXDATA@T)">
+        <DiscretValues>
+          <DiscretValue Label="@P26678-POLUXDATA" Name="ABSENTE0"/>
+          <DiscretValue Label="@P596-POLUXDATA" Name="PRESENTE1"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_D79_RADIO_EMF_TYP_CARCT_000" ReadParamName="CFG_D79_RADIO_EMF_TYP_CARCT_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29748-POLUXDATA" HelpMode="OnScreen" Label="@P29740-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P31125-POLUXDATA" Name="TYP_CARCT_DESACTIVE"/>
+          <DiscretValue Label="@P32487-POLUXDATA" Name="TYP_CARCT_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_TMP_MPTABLEVOLUME_temp" ReadParamName="CFG_TMP_MPTABLEVOLUME_temp" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P14720-POLUXDATA@\*1 @\*5" HelpMode="OnScreen" Label="@P29591-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P5271-POLUXDATA@\*1" Name="MPTABLEVOLUME_1_1"/>
+          <DiscretValue Label="@P5271-POLUXDATA@\*2" Name="MPTABLEVOLUME_2_1"/>
+          <DiscretValue Label="@P5271-POLUXDATA@\*3" Name="MPTABLEVOLUME_3_1"/>
+          <DiscretValue Label="@P5271-POLUXDATA@\*4" Name="MPTABLEVOLUME_4_1"/>
+          <DiscretValue Label="@P5271-POLUXDATA@\*5" Name="MPTABLEVOLUME_5_1"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AGZ_RADIO_LOI_LODX_000" ReadParamName="CFG_AGZ_RADIO_LOI_LODX_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29876-POLUXDATA@\*1@\*3" HelpMode="OnScreen" Label="@P7276-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P10686-POLUXDATA@\*1" Name="MPCOURBSENSI_1"/>
+          <DiscretValue Label="@P10686-POLUXDATA@\*2" Name="MPCOURBSENSI_2"/>
+          <DiscretValue Label="@P10686-POLUXDATA@\*3" Name="MPCOURBSENSI_3"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_ALC_RADIO_RADIO_TEXT_000" ReadParamName="CFG_ALC_RADIO_RADIO_TEXT_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29877-POLUXDATA@T. @P29878-POLUXDATA" HelpMode="OnScreen" Label="@P1754-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P8378-POLUXDATA" Name="MPRADIOTEXT_DESACTIVE"/>
+          <DiscretValue Label="@P3564-POLUXDATA" Name="MPRADIOTEXT_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AKZ_RADIO_CD_TEXTE_000" ReadParamName="CFG_AKZ_RADIO_CD_TEXTE_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29879-POLUXDATA@T. @P29410-POLUXDATA" HelpMode="OnScreen" Label="@P9790-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P8378-POLUXDATA" Name="MPCDTEXT_DESACTIVE"/>
+          <DiscretValue Label="@P3564-POLUXDATA" Name="MPCDTEXT_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AHQ_RADIO_PARK_AID_000" ReadParamName="CFG_AHQ_RADIO_PARK_AID_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P8210-POLUXDATA" HelpMode="OnScreen" Label="@P7514-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P2512-POLUXDATA" Name="MPPRESENCEAAS_ABSENT"/>
+          <DiscretValue Label="@P596-POLUXDATA" Name="MPPRESENCEAAS_PRESENT"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AKX_RADIO_AUX1_000" ReadParamName="CFG_AKX_RADIO_AUX1_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29870-POLUXDATA@\*1@T:@\n@P14975-POLUXDATA@T : @F32734-POLUXDATA@\n@F2035-POLUXDATA@T : @F32735-POLUXDATA@\n@P29871-POLUXDATA@\n@P32486-POLUXDATA" HelpMode="OnScreen" Label="@P14245-POLUXDATA@\*1">
+        <DiscretValues>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="MPENTREEAUX1_ABSENT"/>
+          <DiscretValue Label="@P2035-POLUXDATA" Name="MPENTREEAUX1_CLASSIQUE"/>
+          <DiscretValue Label="@P11137-POLUXDATA" Name="MPENTREEAUX1_MUTE_EXT"/>
+          <DiscretValue Label="@P12568-POLUXDATA" Name="MPENTREEAUX1_RESERVE_KML"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AKX_RADIO_AUX1_001" ReadParamName="CFG_AKX_RADIO_AUX1_001" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29870-POLUXDATA@\*1@T:@\n@P14975-POLUXDATA@T : @F32734-POLUXDATA@\n@F2035-POLUXDATA@T : @F32735-POLUXDATA@\n@P29871-POLUXDATA@\n@P32486-POLUXDATA" HelpMode="OnScreen" Label="@P14245-POLUXDATA@\*1">
+        <DiscretValues>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="MPENTREEAUX1_ABSENT1"/>
+          <DiscretValue Label="@P2035-POLUXDATA" Name="MPENTREEAUX1_CLASSIQUE1"/>
+          <DiscretValue Label="@P11137-POLUXDATA" Name="MPENTREEAUX1_MUTE_EXT1"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AKY_RADIO_AUX2_000" ReadParamName="CFG_AKY_RADIO_AUX2_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29870-POLUXDATA@\*2@T:@\n@P14975-POLUXDATA@T : @F32734-POLUXDATA@\n@F2035-POLUXDATA@T : @F32735-POLUXDATA@\n@P29871-POLUXDATA@\n@P32486-POLUXDATA" HelpMode="OnScreen" Label="@P14245-POLUXDATA@\*2">
+        <DiscretValues>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="MPENTREEAUX2_ABSENT"/>
+          <DiscretValue Label="@P2035-POLUXDATA" Name="MPENTREEAUX2_CLASSIQUE"/>
+          <DiscretValue Label="@P11137-POLUXDATA" Name="MPENTREEAUX2_MUTE_EXT"/>
+          <DiscretValue Label="@P12568-POLUXDATA" Name="MPENTREEAUX2_RESERVE_KML"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AKY_RADIO_AUX2_001" ReadParamName="CFG_AKY_RADIO_AUX2_001" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29870-POLUXDATA@\*2@T:@\n@P14975-POLUXDATA@T : @F32734-POLUXDATA@\n@F2035-POLUXDATA@T : @F32735-POLUXDATA@\n@P29871-POLUXDATA@\n@P32486-POLUXDATA" HelpMode="OnScreen" Label="@P14245-POLUXDATA@\*2">
+        <DiscretValues>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="MPENTREEAUX2_ABSENT1"/>
+          <DiscretValue Label="@P2035-POLUXDATA" Name="MPENTREEAUX2_CLASSIQUE1"/>
+          <DiscretValue Label="@P11137-POLUXDATA" Name="MPENTREEAUX2_MUTE_EXT1"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_BBW_RADIO_VCCF_000" ReadParamName="CFG_BBW_RADIO_VCCF_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P31529-POLUXDATA@\*Citroën C5 (X7)" HelpMode="OnScreen" Label="@P12408-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@F6220-POLUXDATA@\*" Name="MPCONFVCCF_ABSENT"/>
+          <DiscretValue Label="@P596-POLUXDATA" Name="MPCONFVCCF_PRESENT"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_B4Z_RADIO_VOLUME_AAS_AV_000" ReadParamName="CFG_B4Z_RADIO_VOLUME_AAS_AV_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P7719-POLUXDATA" HelpMode="OnScreen" Label="@P3542-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P6524-POLUXDATA@\*0" Name="MPNIVVOLBPAASAV_0"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*1" Name="MPNIVVOLBPAASAV_1"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*2" Name="MPNIVVOLBPAASAV_2"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*3" Name="MPNIVVOLBPAASAV_3"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*4" Name="MPNIVVOLBPAASAV_4"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*5" Name="MPNIVVOLBPAASAV_5"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*6" Name="MPNIVVOLBPAASAV_6"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*7" Name="MPNIVVOLBPAASAV_7"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_B4Y_RADIO_VOLUME_AAS_AR_000" ReadParamName="CFG_B4Y_RADIO_VOLUME_AAS_AR_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P8790-POLUXDATA" HelpMode="OnScreen" Label="@P4510-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P6524-POLUXDATA@\*0" Name="MPNIVVOLBPAASAR_0"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*1" Name="MPNIVVOLBPAASAR_1"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*2" Name="MPNIVVOLBPAASAR_2"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*3" Name="MPNIVVOLBPAASAR_3"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*4" Name="MPNIVVOLBPAASAR_4"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*5" Name="MPNIVVOLBPAASAR_5"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*6" Name="MPNIVVOLBPAASAR_6"/>
+          <DiscretValue Label="@P6524-POLUXDATA@\*7" Name="MPNIVVOLBPAASAR_7"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_ALA_RADIO_PANNE_ANTE_000" ReadParamName="CFG_ALA_RADIO_PANNE_ANTE_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P29887-POLUXDATA" HelpMode="OnScreen" Label="@P12919-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P8378-POLUXDATA" Name="MPDETECPANNEANT_DESACTIVE"/>
+          <DiscretValue Label="@P3564-POLUXDATA" Name="MPDETECPANNEANT_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AH2_RADIO_NB_ANTENNE_000" ReadParamName="CFG_AH2_RADIO_NB_ANTENNE_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P8236-POLUXDATA" HelpMode="OnScreen" Label="@P10138-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@T1" Name="MPNOMBREANT_1"/>
+          <DiscretValue Label="@T2" Name="MPNOMBREANT_2"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AIQ_RADIO_TYPE_ANTENNE_1_000" ReadParamName="CFG_AIQ_RADIO_TYPE_ANTENNE_1_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P11420-POLUXDATA@\*1" HelpMode="OnScreen" Label="@P7839-POLUXDATA@\*1">
+        <DiscretValues>
+          <DiscretValue Label="@P8532-POLUXDATA" Name="MPTYPEANT1_PASSIVE"/>
+          <DiscretValue Label="@P3945-POLUXDATA@\*" Name="MPTYPEANT1_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AIR_RADIO_TYPE_ANTENNE_2_000" ReadParamName="CFG_AIR_RADIO_TYPE_ANTENNE_2_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P11420-POLUXDATA@\*2" HelpMode="OnScreen" Label="@P7839-POLUXDATA@\*2">
+        <DiscretValues>
+          <DiscretValue Label="@P8532-POLUXDATA" Name="MPTYPEANT2_PASSIVE"/>
+          <DiscretValue Label="@P3945-POLUXDATA@\*" Name="MPTYPEANT2_ACTIVE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AHU_RADIO_TAB_ECL01_000" ReadParamName="CFG_AHU_RADIO_TAB_ECL01_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*1" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AHW_RADIO_TAB_ECL02_000" ReadParamName="CFG_AHW_RADIO_TAB_ECL02_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*2" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AHY_RADIO_TAB_ECL03_000" ReadParamName="CFG_AHY_RADIO_TAB_ECL03_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*3" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AI0_RADIO_TAB_ECL04_000" ReadParamName="CFG_AI0_RADIO_TAB_ECL04_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*4" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AI2_RADIO_TAB_ECL05_000" ReadParamName="CFG_AI2_RADIO_TAB_ECL05_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*5" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AI4_RADIO_TAB_ECL06_000" ReadParamName="CFG_AI4_RADIO_TAB_ECL06_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*6" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AI6_RADIO_TAB_ECL07_000" ReadParamName="CFG_AI6_RADIO_TAB_ECL07_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*7" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AI8_RADIO_TAB_ECL08_000" ReadParamName="CFG_AI8_RADIO_TAB_ECL08_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*8" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AIA_RADIO_TAB_ECL09_000" ReadParamName="CFG_AIA_RADIO_TAB_ECL09_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*9" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AIC_RADIO_TAB_ECL10_000" ReadParamName="CFG_AIC_RADIO_TAB_ECL10_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*10" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AIE_RADIO_TAB_ECL11_000" ReadParamName="CFG_AIE_RADIO_TAB_ECL11_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*11" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AIG_RADIO_TAB_ECL12_000" ReadParamName="CFG_AIG_RADIO_TAB_ECL12_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*12" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AII_RADIO_TAB_ECL13_000" ReadParamName="CFG_AII_RADIO_TAB_ECL13_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*13" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AIK_RADIO_TAB_ECL14_000" ReadParamName="CFG_AIK_RADIO_TAB_ECL14_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*14" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AIM_RADIO_TAB_ECL15_000" ReadParamName="CFG_AIM_RADIO_TAB_ECL15_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*15" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="CFG_AIO_RADIO_TAB_ECL16_000" ReadParamName="CFG_AIO_RADIO_TAB_ECL16_000" Type="GeneralParam">
+      <ConfigurationValue Help="@P19006-POLUXDATA" HelpMode="OnScreen" Label="@P15193-POLUXDATA@\*16" Unit="@P4108-POLUXDATA"></ConfigurationValue>
+    </TlcdParameterDef>
+    <!--  <TlcdParameterDef Name="CONFIG_CCD" Type="GeneralParam"/>-->
+    <TlcdParameterDef Name="CONFIG_KML" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CFG_CONFIG_C0_62" ReadParamName="CFG_CONFIG_C0_62" Type="GeneralParam"/>
+  </TlcdParameters>
+</TPM>

@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TPM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TPM.xsd">
+  <ScreenList>
+    <!-- Télécodage du calculateur RECONNU -->
+    <!-- Télécodage du calculateur pour Indice de télécodage 02 03 04 -->
+    <!-- Télécodage du calculateur pour DOTE RB18 -->
+    <Screen Name="TELECODAGEEDC16_R234_RB18" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB18"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_TMP_MP_CONFIG_CARROSSERIE_PROG_C_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB18"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R234_RB18_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB18"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_TMP_MP_CONFIG_CARROSSERIE_PROG_C_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB18"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- TÃ©lÃ©codage du calculateur RECONNU -->
+
+    <!-- TÃ©lÃ©codage du calculateur pour Indice de tÃ©lÃ©codage 02 03 04 -->
+
+    <!-- TÃ©lÃ©codage du calculateur pour DOTE RB07 -->
+    <Screen Name="TELECODAGEEDC16_R234_RB07" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB07"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_8_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB07"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R234_RB07_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB07"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_8_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB07"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- TÃ©lÃ©codage du calculateur RECONNU -->
+
+       <!-- TÃ©lÃ©codage du calculateur pour Indice de tÃ©lÃ©codage 05 -->
+
+       <!-- TÃ©lÃ©codage du calculateur pour DOTE RB07 -->
+    <Screen Name="TELECODAGEEDC16_R05_RB07" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB07"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_7_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB07_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R05_RB07_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB07"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_7_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB07_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- TÃ©lÃ©codage du calculateur RECONNU -->
+
+    <!-- TÃ©lÃ©codage du calculateur pour Indice de tÃ©lÃ©codage 02 03 04 -->
+
+    <!-- TÃ©lÃ©codage du calculateur pour DOTE RB17 -->
+    <Screen Name="TELECODAGEEDC16_R234_RB17" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB17"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_5_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB17"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R234_RB17_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB17"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_5_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB17"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- TÃ©lÃ©codage du calculateur RECONNU -->
+
+       <!-- TÃ©lÃ©codage du calculateur pour Indice de tÃ©lÃ©codage 05 -->
+
+       <!-- TÃ©lÃ©codage du calculateur pour DOTE RB17 -->
+    <Screen Name="TELECODAGEEDC16_R05_RB17" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB17"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_6_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB17_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R05_RB17_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB17"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_6_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB17_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Télécodage du calculateur RECONNU -->
+    <!-- Télécodage du calculateur pour Indice de télécodage 02 03 04 -->
+    <!-- Télécodage du calculateur pour DOTE RB21 -->
+    <Screen Name="TELECODAGEEDC16_R234_RB21" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB21"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_B3J_BSI_PARAMETRAGE_BSI_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB21"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R234_RB21_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB21"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_B3J_BSI_PARAMETRAGE_BSI_000"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB21"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Télécodage du calculateur RECONNU -->
+    <!-- Télécodage du calculateur pour Indice de télécodage 02 03 04 -->
+    <!-- Télécodage du calculateur pour DOTE 0302 et RB05 et RB20 -->
+    <Screen Name="TELECODAGEEDC16_R234_0302" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB05"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R234_0302_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_RB05"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Télécodage du calculateur RECONNU -->
+       <!-- Télécodage du calculateur pour Indice de télécodage 05 -->
+       <!-- Télécodage du calculateur pour DOTE RB18 -->
+    <Screen Name="TELECODAGEEDC16_R05_RB18" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB18"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____CONFIG_CARROSSERIE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB18_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R05_RB18_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB18"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____CONFIG_CARROSSERIE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB18_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Télécodage du calculateur RECONNU -->
+       <!-- Télécodage du calculateur pour Indice de télécodage 05 -->
+       <!-- Télécodage du calculateur pour DOTE RB21 -->
+    <Screen Name="TELECODAGEEDC16_R05_RB21" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB21"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_FREIN_CPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB21_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R05_RB21_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB21"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_FREIN_CPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB21_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Télécodage du calculateur RECONNU -->
+    	<!-- Télécodage du calculateur pour Indice de télécodage 02 03 04 -->
+    	<!-- Télécodage du calculateur pour DOTE 0301 -->
+    <Screen Name="TELECODAGEEDC16_R234_0301" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_0301"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA00301"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R234_0301_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_0301"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA00301"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Télécodage du calculateur RECONNU -->
+       <!-- Télécodage du calculateur pour Indice de télécodage 05 -->
+       <!-- Télécodage du calculateur pour DOTE 0301 -->
+    <Screen Name="TELECODAGEEDC16_R05_0301" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_0301"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_4_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA00301_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R05_0301_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_0301"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_4_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA00301_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Télécodage du calculateur RECONNU -->
+       <!-- Télécodage du calculateur pour Indice de télécodage 05 -->
+       <!-- Télécodage du calculateur pour DOTE 0302 et RB05 TTY  -->
+    <Screen Name="TELECODAGEEDC16_R05_0302" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB05"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_0318_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB05_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R05_0302_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_RB05"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_0318_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0RB05_05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Télécodage du calculateur NON RECONNU -->
+    	<!-- Télécodage du calculateur pour Indice de télécodage 02 03 04 -->
+    <Screen Name="TELECODAGEEDC16_R234_NR" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_NR"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_3_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0NR"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R234_NR_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_020304"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R234_NR"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0E" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____FPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_CAPR_EDC16_temp"/>
+            <TlcdParameter Impose="true" ImposedValue="FF" Mode="None" Name="CIPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_3_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CHAUFFAGEADD_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET16"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0NR"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+    <!-- Télécodage du calculateur NON RECONNU -->
+    	<!-- Télécodage du calculateur pour Indice de télécodage 05 -->
+    <Screen Name="TELECODAGEEDC16_R05_NR" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_NR"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_18_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0NR05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+          <Door Name="ENDORMISSEMENT" Number="6"/>
+          <Door Name="ECRAN_TELEC_NOK" Number="9"/>
+        </Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGEEDC16_R05_NR_READ" TitleRead="@P32742-POLUXDATA" TitleWrite="@P32742-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <Read Service="RDBLID" SubService="RDBLID_LID_A0_05"/>
+          <Write Service="REQDWN" SubService="REQDWN_LID_A0_R05_NR"/>
+          <TlcdParameterList>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN1"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN2"/>
+            <TlcdParameter Impose="true" ImposedValue="00" Mode="None" Name="CONFIG_PARAIN3"/>
+            <TlcdParameter Impose="true" ImposedValue="0D" Mode="None" Name="CONFIG_MEMSIZE"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_INDICE_TELECODAGE"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____BVPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG____CAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_18_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_____CHAPR"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET14_05"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_A3T_BSI_ABSMUX_000"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_CE_0"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CONFIG_PROGRAMME_DAMP_1"/>
+            <TlcdParameter Impose="false" Mode="None" Name="CONFIG_UCPR_NU_OCTET15_05"/>
+            <TlcdParameter Impose="true" ImposedValue="000000" Mode="None" Name="CONFIG_SIGN" SignatureData="true"/>
+            <TlcdParameter Impose="true" ImposedValue="FD" Mode="None" Name="CONFIG_SITE"/>
+            <TlcdParameter Impose="true" Mode="None" Name="CRCA0NR05"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors></Doors>
+      </Telecoding>
+    </Screen>
+  </ScreenList>
+  <TlcdParameters>
+    <!-- ************************************************************************************* -->
+    <!-- ************Déclaration des paramètres pour indice 02 03 04 ************************* -->
+    <TlcdParameterDef ConfName="MP_CONFIG_FPO" Name="CFG____FPR" ReadParamName="MP_CONFIG_REFROIDISSEMENT_MOTEUR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P4569-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P7208-POLUXDATA@\*2" Name="CFG____FPR_GMV_2_VITESSE"/>
+          <DiscretValue Label="@P3584-POLUXDATA@\*1" Name="CFG____FPR_MOTEUR_MONO_VITESSE"/>
+          <DiscretValue Label="@P6211-POLUXDATA@\*" Name="CFG____FPR_HACHEUR"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_PCPO" Name="CFG_000_CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_W03_temp" ReadParamName="MP_CONFIG_CAPTEUR_PRESSION_CLIM" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P8285-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P2439-POLUXDATA" Name="CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_CAPTEUR_LINEAIRE"/>
+          <DiscretValue Label="@P5806-POLUXDATA" Name="CONFIG_CAPTEUR_PRESSION_AIR_CONDITIONNE_PAS_DE_CLIM"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_BVPO" Name="CFG_000_CONFIG_BOITE_DE_VITESSES_W03_temp" ReadParamName="MP_CONFIG_BOITE_DE_VITESSES" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P5140-POLUXDATA@\*">
+        <DiscretValues>
+          <DiscretValue Label="@P15518-POLUXDATA" Name="CONFIG_BOITE_DE_VITESSES_W03_LONGUE"/>
+          <DiscretValue Label="@P3204-POLUXDATA" Name="CONFIG_BOITE_DE_VITESSES_W03_COURTE"/>
+          <DiscretValue Label="@P2958-POLUXDATA" Name="CONFIG_BOITE_DE_VITESSES_W03_PILOTEE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CAPO" Name="CFG_000_CMM_CAPR_EDC16_temp" ReadParamName="MP_CONFIG_ALTERNATEUR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P18470-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P11781-POLUXDATA@\*15" Name="CONFIG_ALTERNATEUR_CLASSE_15"/>
+          <DiscretValue Label="@P11781-POLUXDATA@\*18" Name="CONFIG_ALTERNATEUR_CLASSE_18"/>
+          <DiscretValue Label="@P11781-POLUXDATA@\*08" Name="CONFIG_ALTERNATEUR_CLASSE_08"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CIPO" Name="CIPR" ReadParamName="MP_CIPR" Type="GeneralParam"></TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO" Name="CFG_TMP_MP_CONFIG_CARROSSERIE_PROG_C_temp" ReadParamName="MP_CONFIG_CARROSSERIE_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P14754-POLUXDATA@T OS2@\n@P237-POLUXDATA@\n@P19545-POLUXDATA@\*ZI12" Name="CONFIG_CARROSSERIE_05_DONNEE_1"/>
+          <DiscretValue Label="@P14754-POLUXDATA@T OS2@\n@P5164-POLUXDATA@\n@P19545-POLUXDATA@\*ZI12" Name="CONFIG_CARROSSERIE_05_DONNEE_2"/>
+          <DiscretValue Label="@P14754-POLUXDATA@T S200@\n@P237-POLUXDATA@\n@P19545-POLUXDATA@\*ZI12" Name="CONFIG_CARROSSERIE_05_DONNEE_3"/>
+          <DiscretValue Label="@P14754-POLUXDATA@T S200@\n@P237-POLUXDATA@\n@P19545-POLUXDATA@\*ZI5" Name="CONFIG_CARROSSERIE_05_DONNEE_4"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO_0301" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_2_temp" ReadParamName="MP_CONFIG_CARROSSERIE_0301_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P16961-POLUXDATA@T RTE(@P920-POLUXDATA@T)" Name="CONFIG_CARROSSERIE_DONNEE_1_NONRTE"/>
+          <DiscretValue Label="@P920-POLUXDATA@T" Name="CONFIG_CARROSSERIE_DONNEE_1_RTE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO_0301" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_4_temp" ReadParamName="MP_CONFIG_CARROSSERIE_0301_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P16961-POLUXDATA@T RTE(@P920-POLUXDATA@T)" Name="CFG_000_MP_CARROSSERIE_DEPOLLUTION_temp_NONRTE"/>
+          <DiscretValue Label="@P920-POLUXDATA" Name="CFG_000_MP_CARROSSERIE_DEPOLLUTION_temp_RTE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO_NR" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_3_temp" ReadParamName="MP_CONFIG_CARROSSERIE_NR_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@TCAR0" Name="CAR0"/>
+          <DiscretValue Label="@TCAR1" Name="CAR1"/>
+          <DiscretValue Label="@TCAR2" Name="CAR2"/>
+          <DiscretValue Label="@TCAR3" Name="CAR3"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO_NR" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_18_temp" ReadParamName="MP_CONFIG_CARROSSERIE_NR_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@TCAR0" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_18_temp0"/>
+          <DiscretValue Label="@TCAR1" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_18_temp1"/>
+          <DiscretValue Label="@TCAR2" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_18_temp2"/>
+          <DiscretValue Label="@TCAR3" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_18_temp3"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO" Name="CFG_B3J_BSI_PARAMETRAGE_BSI_000" ReadParamName="MP_CONFIG_CARROSSERIE_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P19545-POLUXDATA@\*ZI5" Name="CFG_B3J_BSI_PARAMETRAGE_BSI_000_FE"/>
+          <DiscretValue Label="@P19545-POLUXDATA@\*ZI12" Name="CFG_B3J_BSI_PARAMETRAGE_BSI_000_FD"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO_TTY" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_03_temp" ReadParamName="MP_CONFIG_CARROSSERIE_TTY_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P770-POLUXDATA" Name="CFG_000_MP_CARROSSERIE_DEPOLLUTION_temp_TTY"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO_TTY" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_0318_temp" ReadParamName="MP_CONFIG_CARROSSERIE_TTY_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P770-POLUXDATA" Name="CFG_000_MP_CONFIG_CARROSSERIE_PROG_0318_temp_TTY"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CHAPO" Name="CFG_000_MP_CHAUFFAGEADD_temp" ReadParamName="MP_CONFIG_CHAUFFAGE_ADDITIONNEL_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P423-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P3245-POLUXDATA" Name="CONFIG_CHAUFFAGE_ADDITIONNEL_ABSENT"/>
+          <DiscretValue Label="@P27472-POLUXDATA" Name="CONFIG_CHAUFFAGE_ADDITIONNEL_RESISTANCE_CMD_BSI"/>
+          <DiscretValue Label="@P26252-POLUXDATA" Name="CONFIG_CHAUFFAGE_ADDITIONNEL_BRULEUR_CMD_BSI"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_ESP" Name="CFG_000_CMM_UCPR_ESP_D2_temp" ReadParamName="MP_CONFIG_ARCHITECTURE_ELECTRIQUE_ESP_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P11571-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P596-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_ESP_D2_P"/>
+          <DiscretValue Label="@P2512-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_ESP_D2_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_RVV1" Name="CFG_000_MP_ARCHI_ELEC_RVV1_temp" ReadParamName="MP_CONFIG_ARCHITECTURE_ELECTRIQUE_RVV1_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P3558-POLUXDATA@\*1">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="UCPR_RVV1_P"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="UCPR_RVV1_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_BSI" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D2" ReadParamName="MP_CONFIG_ARCHITECTURE_ELECTRIQUE_BSI_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P5296-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P2608-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_BSI_D2_MUX"/>
+          <DiscretValue Label="@P10088-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_BSI_D2_FIL"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_BVA" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_03_temp" ReadParamName="MP_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28136-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P2608-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_BV_MUX1"/>
+          <DiscretValue Label="@P10088-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_BV_FIL"/>
+          <DiscretValue Label="@P12157-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_BV_NONAPP"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_NU_OCTET11" Name="CONFIG_UCPR_NU_OCTET15" ReadParamName="MP_CONFIG_UCPR_NU_OCTET20" Type="GeneralParam"></TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_NU_OCTET12" Name="CONFIG_UCPR_NU_OCTET16" ReadParamName="MP_CONFIG_UCPR_NU_OCTET21" Type="GeneralParam"></TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_ABS" Name="CFG_000_CMM_UCPR_ABS_SECURITE_ACTIVE_temp" ReadParamName="MP_CONFIG_ABS_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P25476-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_SECURITE_ACTIVE_P"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_SECURITE_ACTIVE_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_LVV" Name="CFG_000_CMM_UCPR_LVV_D2_temp" ReadParamName="MP_CONFIG_LVV_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P12993-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_LVV_D2_P"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_LVV_D2_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <!-- ************************************************************************************* -->
+        <!-- ***************Déclaration des paramètres pour indice 05 **************************** -->
+    <TlcdParameterDef ConfName="MP_CONFIG_FPO" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp" ReadParamName="MP_CONFIG_REFROIDISSEMENT_MOTEUR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P4569-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P7208-POLUXDATA@\*2" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp_GMV_2_VITESSE"/>
+          <DiscretValue Label="@P6211-POLUXDATA@\*" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp_HACHEUR"/>
+          <DiscretValue Label="@P3584-POLUXDATA@\*1" Name="CFG_000_MP_REFROIDISSEMENT_MOTEUR_temp_MOTEUR_MONO_VITESSE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_PCPO" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp" ReadParamName="MP_CONFIG_CAPTEUR_PRESSION_CLIM" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P8285-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P2439-POLUXDATA" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp_CAPTEUR_LINEAIRE"/>
+          <DiscretValue Label="@P5806-POLUXDATA" Name="CFG_CAPTEUR_PRESSION_CLIM_W03_temp_PAS_DE_CLIM"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_BVPO" Name="CFG_____BVPR" ReadParamName="MP_CONFIG_BOITE_DE_VITESSES" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P14682-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P15518-POLUXDATA" Name="CFG_____BVPR_LONGUE"/>
+          <DiscretValue Label="@P3204-POLUXDATA" Name="CFG_____BVPR_COURTE"/>
+          <DiscretValue Label="@P2958-POLUXDATA" Name="CFG_____BVPR_PILOTEE"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CAPO" Name="CFG____CAPR" ReadParamName="MP_CONFIG_ALTERNATEUR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P18470-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P11781-POLUXDATA@\*15" Name="CFG____CAPR_CLASSE_15"/>
+          <DiscretValue Label="@P11781-POLUXDATA@\*18" Name="CFG____CAPR_CLASSE_18"/>
+          <DiscretValue Label="@P11781-POLUXDATA@\*08" Name="CFG____CAPR_CLASSE_08"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO" Name="CFG_____CONFIG_CARROSSERIE" ReadParamName="MP_CONFIG_CARROSSERIE_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P14754-POLUXDATA@T OS2@\n@P237-POLUXDATA@\n@P19545-POLUXDATA@\*ZI12" Name="CFG_____CONFIG_CARROSSERIE_1"/>
+          <DiscretValue Label="@P14754-POLUXDATA@T OS2@\n@P5164-POLUXDATA@\n@P19545-POLUXDATA@\*ZI12" Name="CFG_____CONFIG_CARROSSERIE_2"/>
+          <DiscretValue Label="@P14754-POLUXDATA@T S200@\n@P237-POLUXDATA@\n@P19545-POLUXDATA@\*ZI12" Name="CFG_____CONFIG_CARROSSERIE_3"/>
+          <DiscretValue Label="@P14754-POLUXDATA@T S200@\n@P237-POLUXDATA@\n@P19545-POLUXDATA@\*ZI5" Name="CFG_____CONFIG_CARROSSERIE_4"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CPO" Name="CFG_000_FREIN_CPR" ReadParamName="MP_CONFIG_CARROSSERIE_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28334-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P19545-POLUXDATA@\*ZI5" Name="CFG_000_FREIN_CPR_1"/>
+          <DiscretValue Label="@P19545-POLUXDATA@\*ZI12" Name="CFG_000_FREIN_CPR_2"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_CHAPO" Name="CFG_____CHAPR" ReadParamName="MP_CONFIG_CHAUFFAGE_ADDITIONNEL_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P6839-POLUXDATA@\*">
+        <DiscretValues>
+          <DiscretValue Label="@P3245-POLUXDATA" Name="CFG_____CHAPR_ABSENT"/>
+          <DiscretValue Label="@P12303-POLUXDATA" Name="CFG_____CHAPR_RESISTANCE_CMD_BSI"/>
+          <DiscretValue Label="@P7307-POLUXDATA" Name="CFG_____CHAPR_BRULEUR_CMD_BSI"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_ESP" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp" ReadParamName="MP_CONFIG_ARCHITECTURE_ELECTRIQUE_ESP_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P11571-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P596-POLUXDATA" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp_P"/>
+          <DiscretValue Label="@P2512-POLUXDATA" Name="CFG_000_CMM_UCPR_ESP_03_D2_temp_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_RVV1" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0" ReadParamName="MP_CONFIG_ARCHITECTURE_ELECTRIQUE_RVV1_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P5403-POLUXDATA@\*1">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0_P"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="CONFIG_ARCHITECTURE_ELECTRIQUE_RVV_SID803_0_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_BSI" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3" ReadParamName="MP_CONFIG_ARCHITECTURE_ELECTRIQUE_BSI_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P5296-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P2608-POLUXDATA" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3_MUX"/>
+          <DiscretValue Label="@P10088-POLUXDATA" Name="CFG_000_CMM_UCPR_BSI_CAN_03_D3_FIL"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_BVA" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp" ReadParamName="MP_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P28136-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P2608-POLUXDATA" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp_MUX1"/>
+          <DiscretValue Label="@P10088-POLUXDATA" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp_FIL"/>
+          <DiscretValue Label="@P12157-POLUXDATA" Name="CFG_000_CONFIG_ARCHITECTURE_ELECTRIQUE_BV_04_temp_NONAPP"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_NU_OCTET10_05" Name="CONFIG_UCPR_NU_OCTET14_05" ReadParamName="MP_CONFIG_UCPR_NU_OCTET18_05" Type="GeneralParam"></TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_NU_OCTET11_05" Name="CONFIG_UCPR_NU_OCTET15_05" ReadParamName="MP_CONFIG_UCPR_NU_OCTET19_05" Type="GeneralParam"></TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_ABS" Name="CFG_A3T_BSI_ABSMUX_000" ReadParamName="MP_CONFIG_ABS_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P25476-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="CFG_A3T_BSI_ABSMUX_000_P"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="CFG_A3T_BSI_ABSMUX_000_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_CE" Name="CONFIG_PROGRAMME_CE_0" ReadParamName="MP_CONFIG_CE_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P7952-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="CONFIG_PROGRAMME_CE_0_P"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="CONFIG_PROGRAMME_CE_0_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_LVV" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp" ReadParamName="MP_CONFIG_LVV_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P12993-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp_P"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="CFG_000_CMM_UCPR_LVV_D2_03_temp_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_RVV2" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp" ReadParamName="MP_CONFIG_RVV2_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@P5134-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp_P"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="CFG_000_MP_ARCHI_ELEC_RVV2_temp_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef ConfName="MP_CONFIG_UCPO_DAMP" Name="CONFIG_PROGRAMME_DAMP_1" ReadParamName="MP_CONFIG_DAMP_PR" Type="ListChoiceWithConfParam">
+      <ConfigurationValue Label="@F3820-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P9969-POLUXDATA" Name="CONFIG_PROGRAMME_DAMP_1_P"/>
+          <DiscretValue Label="@P14975-POLUXDATA" Name="CONFIG_PROGRAMME_DAMP_1_A"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <!-- ************************************************************************************* -->
+        <!-- ************************************************************************************* -->
+    <TlcdParameterDef Name="CONFIG_PARAIN1" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CONFIG_PARAIN2" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CONFIG_PARAIN3" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CONFIG_MEMSIZE" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CONFIG_INDICE_TELECODAGE" ReadParamName="CONFIG_INDICE_TELECODAGE" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CONFIG_SITE" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CONFIG_SIGN" Type="GeneralParam"/>
+  </TlcdParameters>
+</TPM>

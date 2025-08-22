@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TPM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TPM.xsd">
+  <ScreenList>
+    <Screen Name="TELECODAGE" TitleRead="@P12712-POLUXDATA" TitleWrite="@P12712-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B2_A515"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B2_A515"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="None" Name="CFG_222_CMB_OPTION_NG4_000"/>
+            <TlcdParameter Impose="false" Mode="None" Name="RESERVE_21B2_04_07050403020100"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_222_CMB_ACTIVATION_SEQUENCE_DEMARRAGE_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE_1" TitleRead="@P12712-POLUXDATA" TitleWrite="@P12712-POLUXDATA" TypeOfGUI="STANDARD_GUI">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B2_A515"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B2_A515"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="None" Name="RESERVE_21B2_04_07050403020100"/>
+            <TlcdParameter Impose="false" Mode="ReadWrite" Name="CFG_222_CMB_ACTIVATION_SEQUENCE_DEMARRAGE_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGES" TitleRead="@P12712-POLUXDATA" TitleWrite="@P12712-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B2_A515"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B2_A515"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="None" Name="CFG_222_CMB_OPTION_NG4_000"/>
+            <TlcdParameter Impose="false" Mode="None" Name="RESERVE_21B2_04_07050403020100"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_222_CMB_ACTIVATION_SEQUENCE_DEMARRAGE_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+    <Screen Name="TELECODAGE_1S" TitleRead="@P12712-POLUXDATA" TitleWrite="@P12712-POLUXDATA" TypeOfGUI="GUI_ONLY_READ">
+      <Telecoding>
+        <TlcdParameterGroup>
+          <!-- déclaration du service et sous service de lecture -->
+          <Read Service="RDBLID" SubService="RDBLID_LID_B2_A515"/>
+          <!-- declaration du service et sous service de ecriture -->
+          <Write Service="WDBLID" SubService="WDBLID_LID_B2_A515"/>
+          <TlcdParameterList>
+            <!-- liste des parametre de télécodage -->
+            <TlcdParameter Impose="false" Mode="None" Name="RESERVE_21B2_04_07050403020100"/>
+            <TlcdParameter Impose="false" Mode="Read" Name="CFG_222_CMB_ACTIVATION_SEQUENCE_DEMARRAGE_000"/>
+          </TlcdParameterList>
+        </TlcdParameterGroup>
+        <Doors>
+				<!--liste des appels aux fonctions applicatives -->
+				</Doors>
+      </Telecoding>
+    </Screen>
+  </ScreenList>
+  <TlcdParameters>
+    <!-- Declaration des parametres pour le lien entre trame de lecture et d'ecriture -->
+    <TlcdParameterDef Name="CFG_222_CMB_OPTION_NG4_000" Type="GeneralParam"/>
+    <TlcdParameterDef Name="CFG_222_CMB_ACTIVATION_SEQUENCE_DEMARRAGE_000" ReadParamName="CFG_222_CMB_ACTIVATION_SEQUENCE_DEMARRAGE_000" Type="ListChoiceParam">
+      <ConfigurationValue Help="@P41167-POLUXDATA" Label="@P14896-POLUXDATA">
+        <DiscretValues>
+          <DiscretValue Label="@P4778-POLUXDATA" Name="ACTIVATION_SEQUENCE_DEMARRAGE_0"/>
+          <DiscretValue Label="@P3564-POLUXDATA" Name="ACTIVATION_SEQUENCE_DEMARRAGE_1"/>
+        </DiscretValues>
+      </ConfigurationValue>
+    </TlcdParameterDef>
+    <TlcdParameterDef Name="RESERVE_21B2_04_07050403020100" Type="GeneralParam"/>
+  </TlcdParameters>
+</TPM>
